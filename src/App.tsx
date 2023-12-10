@@ -13,6 +13,14 @@ import DashLayout from "./components/DashLayout";
 import ShoppingLayout from "./components/ShoppingLayout";
 import Shopping from "./features/shop/Shopping";
 import UsersList from "./features/users/UsersList";
+import MuiTypography from "./components/mui/MuiTypography";
+import { MuiButton } from "./components/mui/MuiButton";
+import { MuiTextField } from "./components/mui/MuiTextField";
+import { MuiSelect } from "./components/mui/MuiSelect";
+import { MuiRadioButton } from "./components/mui/MuiRadioButton";
+import { MuiCheckbox } from "./components/mui/MuiCheckbox";
+import { MuiSwitch } from "./components/mui/MuiSwitch";
+import { MuiRating } from "./components/mui/MuiRating";
 
 function App() {
   return (
@@ -38,6 +46,16 @@ function App() {
                   <RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />
                 }
               >
+                /////////////////////////////////////////////////////////////////////////////////
+                <Route path="typo" element={<MuiTypography />} />
+                <Route path="button" element={<MuiButton />} />
+                <Route path="text" element={<MuiTextField />} />
+                <Route path="select" element={<MuiSelect />} />
+                <Route path="rb" element={<MuiRadioButton />} />
+                <Route path="cb" element={<MuiCheckbox />} />
+                <Route path="switch" element={<MuiSwitch />} />
+                <Route path="rating" element={<MuiRating />} />
+                /////////////////////////////////////////////////////////////////////////////////
                 <Route path="dash" element={<DashLayout />}>
                   <Route index element={<Welcome />} />
                   <Route path="users">
@@ -46,7 +64,6 @@ function App() {
                 </Route>
               </Route>
             </Route>
-            
           </Route>
         </Route>
       </Route>

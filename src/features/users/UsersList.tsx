@@ -10,6 +10,7 @@ const UsersList = () => {
   } = useGetUsersQuery("usersList");
 
   let content;
+
   if (isLoading) return <h1>...isLoading</h1>;
   else if (isError) {
     content = (
@@ -22,7 +23,6 @@ const UsersList = () => {
   } else if (isSuccess) {
     content = <div>{users.ids}</div>;
   }
-
   return content;
 };
 
