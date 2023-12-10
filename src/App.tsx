@@ -21,6 +21,10 @@ import { MuiRadioButton } from "./components/mui/MuiRadioButton";
 import { MuiCheckbox } from "./components/mui/MuiCheckbox";
 import { MuiSwitch } from "./components/mui/MuiSwitch";
 import { MuiRating } from "./components/mui/MuiRating";
+import { MuiAutocomplete } from "./components/mui/MuiAutocomplete";
+import { MuiLayout } from "./components/mui/MuiLayout";
+import { MuiCard } from "./components/mui/MuiCard";
+import { MuiAccordion } from "./components/mui/MuiAccordion";
 
 function App() {
   return (
@@ -55,6 +59,10 @@ function App() {
                 <Route path="cb" element={<MuiCheckbox />} />
                 <Route path="switch" element={<MuiSwitch />} />
                 <Route path="rating" element={<MuiRating />} />
+                <Route path="autoc" element={<MuiAutocomplete />} />
+                <Route path="layout" element={<MuiLayout />} />
+                <Route path="card" element={<MuiCard />} />
+                <Route path="accor" element={<MuiAccordion />} />
                 /////////////////////////////////////////////////////////////////////////////////
                 <Route path="dash" element={<DashLayout />}>
                   <Route index element={<Welcome />} />
