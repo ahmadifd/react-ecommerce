@@ -25,6 +25,8 @@ import { MuiAutocomplete } from "./components/mui/MuiAutocomplete";
 import { MuiLayout } from "./components/mui/MuiLayout";
 import { MuiCard } from "./components/mui/MuiCard";
 import { MuiAccordion } from "./components/mui/MuiAccordion";
+import { MuiImageList } from "./components/mui/MuiImageList";
+import { MuiNavbar } from "./components/mui/MuiNavbar";
 
 function App() {
   return (
@@ -63,6 +65,8 @@ function App() {
                 <Route path="layout" element={<MuiLayout />} />
                 <Route path="card" element={<MuiCard />} />
                 <Route path="accor" element={<MuiAccordion />} />
+                <Route path="imgl" element={<MuiImageList />} />
+                <Route path="nav" element={<MuiNavbar />} />
                 /////////////////////////////////////////////////////////////////////////////////
                 <Route path="dash" element={<DashLayout />}>
                   <Route index element={<Welcome />} />
