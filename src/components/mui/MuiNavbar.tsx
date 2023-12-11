@@ -24,7 +24,6 @@ export const MuiNavbar = () => {
   return (
     <AppBar position="static" color="transparent">
       <Toolbar>
-
         <IconButton size="large" edge="start" color="inherit" aria-label="logo">
           <CatchingPokemonIcon />
         </IconButton>
@@ -40,9 +39,9 @@ export const MuiNavbar = () => {
           <Button
             color="inherit"
             id="resources-button"
-            aria-controls={open ? "resources-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
+            // aria-controls={open ? "resources-menu" : undefined}
+            // aria-haspopup="true"
+            // aria-expanded={open ? "true" : undefined}
             endIcon={<KeyboardArrowDownIcon />}
             onClick={handleClick}
           >
@@ -51,11 +50,10 @@ export const MuiNavbar = () => {
           <Button color="inherit">Login</Button>
         </Stack>
 
-        <Menu
-          id="resources-menu"
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
+        <Menu id="resources-menu"
+           anchorEl={anchorEl}
+           open={open}
+           onClose={handleClose}
           anchorOrigin={{
             vertical: "bottom",
             horizontal: "right",
@@ -71,7 +69,6 @@ export const MuiNavbar = () => {
           <MenuItem onClick={handleClose}>Blog</MenuItem>
           <MenuItem onClick={handleClose}>Podcast</MenuItem>
         </Menu>
-
       </Toolbar>
     </AppBar>
   );
