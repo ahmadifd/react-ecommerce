@@ -76,23 +76,23 @@ function App() {
         <Route path="register" element={<Register />} />
         /////////////////////////////////////////////////////////////////////////////////
         <Route path="typo" element={<MuiTypography />} />
-        <Route path="button" element={<MuiButton />} />
+        <Route path="btn" element={<MuiButton />} />
         <Route path="text" element={<MuiTextField />} />
         <Route path="select" element={<MuiSelect />} />
-        <Route path="rb" element={<MuiRadioButton />} />
-        <Route path="cb" element={<MuiCheckbox />} />
+        <Route path="radiobtn" element={<MuiRadioButton />} />
+        <Route path="chkbox" element={<MuiCheckbox />} />
         <Route path="switch" element={<MuiSwitch />} />
         <Route path="rating" element={<MuiRating />} />
-        <Route path="autoc" element={<MuiAutocomplete />} />
+        <Route path="autocomplete" element={<MuiAutocomplete />} />
         <Route path="layout" element={<MuiLayout />} />
         <Route path="card" element={<MuiCard />} />
-        <Route path="accor" element={<MuiAccordion />} />
-        <Route path="imgl" element={<MuiImageList />} />
-        <Route path="nav" element={<MuiNavbar />} />
+        <Route path="accordion" element={<MuiAccordion />} />
+        <Route path="imglist" element={<MuiImageList />} />
+        <Route path="navbar" element={<MuiNavbar />} />
         <Route path="link" element={<MuiLink />} />
-        <Route path="brcr" element={<MuiBreadcrumbs />} />
-        <Route path="drw" element={<MuiDrawer />} />
-        <Route path="sd" element={<MuiSpeedDial />} />
+        <Route path="breadcrumbs" element={<MuiBreadcrumbs />} />
+        <Route path="drawer" element={<MuiDrawer />} />
+        <Route path="speeddial" element={<MuiSpeedDial />} />
         <Route path="btnnav" element={<MuiBottomNavigation />} />
         <Route path="avator" element={<MuiAvatar />} />
         <Route path="badge" element={<MuiBadge />} />
@@ -107,21 +107,20 @@ function App() {
         <Route path="skeleton" element={<MuiSkeleton />} />
         <Route path="lbtn" element={<MuiLoadingButton />} />
         <Route path="tab" element={<MuiTabs />} />
-        <Route path="tl" element={<MuiTimeline />} />
-        <Route path="mnry" element={<MuiMasonry />} />
-        <Route path="ct" element={<MuiCustomTheme />} />
-        <Route path="resp" element={<MuiResponsiveness />} />
-        <Route path="bdrop" element={<MuiBackdrop />} />
+        <Route path="timeline" element={<MuiTimeline />} />
+        <Route path="masonry" element={<MuiMasonry />} />
+        <Route path="custimtheme" element={<MuiCustomTheme />} />
+        <Route path="responsive" element={<MuiResponsiveness />} />
+        <Route path="backdrop" element={<MuiBackdrop />} />
         <Route path="modal" element={<MuiModal />} />
         <Route path="fab" element={<MuiFAB />} />
         <Route path="slider" element={<MuiSlider />} />
-        <Route path="tlist" element={<MuiTransferList />} />
+        <Route path="transfer" element={<MuiTransferList />} />
         <Route path="pagination" element={<MuiPagination />} />
         <Route path="stepper" element={<MuiStepper />} />
         <Route path="popover" element={<MuiPopover />} />
-        <Route path="popover" element={<MuiPopover />} />
         <Route path="popper" element={<MuiPopper />} />
-        <Route path="tran" element={<MuiTransitions />} />
+        <Route path="transitions" element={<MuiTransitions />} />
         <Route path="date" element={<MuiDate />} />
         <Route path="bar" element={<MuiBarChart />} />
         <Route path="line" element={<MuiLineChart />} />

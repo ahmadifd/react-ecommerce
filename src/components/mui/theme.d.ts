@@ -2,14 +2,16 @@ import { Theme, ThemeOptions } from '@mui/material/styles'
 
 declare module '@mui/material/styles' {
   interface Theme {
-    status: {
+    status?: {
       danger: string
-    }
+    },
+    direction? :string
   }
   interface ThemeOptions {
-    status: {
+    status?: {
       danger: React.CSSProperties['color']
-    }
+    },
+    direction? :string
   }
 
   interface Palette {
