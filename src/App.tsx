@@ -49,6 +49,23 @@ import { MuiTimeline } from "./components/mui/MuiTimeline";
 import { MuiMasonry } from "./components/mui/MuiMasonry";
 import { MuiCustomTheme } from "./components/mui/MuiCustomTheme";
 import { MuiResponsiveness } from "./components/mui/MuiResponsiveness";
+import MuiBackdrop from "./components/mui/MuiBackdrop";
+import MuiModal from "./components/mui/MuiModal";
+import MuiFAB from "./components/mui/MuiFAB";
+import MuiSlider from "./components/mui/MuiSlider";
+import MuiTransferList from "./components/mui/MuiTranferList";
+import MuiPagination from "./components/mui/MuiPagination";
+import MuiStepper from "./components/mui/MuiStepper";
+import MuiPopover from "./components/mui/MuiPopover";
+import MuiPopper from "./components/mui/MuiPoper";
+import MuiTransitions from "./components/mui/MuiTransitions";
+import MuiDate from "./components/mui/MuiDate";
+import MuiBars from "./components/mui/MuiBarChart";
+import MuiLineChart from "./components/mui/MuiLineChart";
+import MuiBarChart from "./components/mui/MuiBarChart";
+import MuiPieChart from "./components/mui/MuiPieChart";
+import MuiScatterChart from "./components/mui/MuiScatterChart";
+import MuiDataGrid from "./components/mui/MuiDataGrid";
 
 function App() {
   return (
@@ -94,6 +111,23 @@ function App() {
         <Route path="mnry" element={<MuiMasonry />} />
         <Route path="ct" element={<MuiCustomTheme />} />
         <Route path="resp" element={<MuiResponsiveness />} />
+        <Route path="bdrop" element={<MuiBackdrop />} />
+        <Route path="modal" element={<MuiModal />} />
+        <Route path="fab" element={<MuiFAB />} />
+        <Route path="slider" element={<MuiSlider />} />
+        <Route path="tlist" element={<MuiTransferList />} />
+        <Route path="pagination" element={<MuiPagination />} />
+        <Route path="stepper" element={<MuiStepper />} />
+        <Route path="popover" element={<MuiPopover />} />
+        <Route path="popover" element={<MuiPopover />} />
+        <Route path="popper" element={<MuiPopper />} />
+        <Route path="tran" element={<MuiTransitions />} />
+        <Route path="date" element={<MuiDate />} />
+        <Route path="bar" element={<MuiBarChart />} />
+        <Route path="line" element={<MuiLineChart />} />
+        <Route path="pie" element={<MuiPieChart />} />
+        <Route path="scatter" element={<MuiScatterChart />} />
+        <Route path="datagrid" element={<MuiDataGrid />} />
         /////////////////////////////////////////////////////////////////////////////////
         <Route element={<PersistLogin />}>
           <Route
